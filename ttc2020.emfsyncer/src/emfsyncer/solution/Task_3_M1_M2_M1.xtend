@@ -25,7 +25,6 @@ class Task_3_M1_M2_M1 extends AbstractTask {
 	
 	new (EPackage model1, EPackage model2) {
 		super(model1, model2);
-		
 		syncer = new EMFSyncer(#['scenario3_v1'], model2, newArrayList(mapping))
 		syncer.syncingStrategy = SyncingStrategy.EAGER
 	}

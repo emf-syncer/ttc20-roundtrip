@@ -29,10 +29,7 @@ class Task_2_M1_M2_M1 extends AbstractTask {
 		
 	new (EPackage model1, EPackage model2) {
 		super(model1, model2);
-		
-		val mappingSpec = newArrayList(mapping)
-		
-		syncer = new EMFSyncer(#['scenario2_v1'], model2, mappingSpec)
+		syncer = new EMFSyncer(#['scenario2_v1'], model2, newArrayList(mapping))
 		syncer.syncingStrategy = SyncingStrategy.EAGER
 	}
 	

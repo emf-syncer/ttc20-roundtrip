@@ -9,20 +9,6 @@ import emf_syncer.EMFSyncer
 class Task_4_M1_M2_M1 extends AbstractTask {
 	val EMFSyncer syncer
 	
-//	val mapping = new EmfSyncerMapping(
-//		'Person', 'age', /* <--> */ 'Person', 'ybirth',
-//		// source to target feature value transformation
-//		[  
-//			val person_v1 = it as scenario4_v1.Person
-//			Integer.valueOf(Calendar.getInstance().get(Calendar.YEAR) - person_v1.age) as Object
-//		],
-//		// target to source feature value transformation
-//		[  
-//			val person_v2 = it as scenario4_v2.Person
-//			Integer.valueOf(Calendar.getInstance().get(Calendar.YEAR) - person_v2.ybirth) as Object
-//		]
-//	)
-	
 	new (EPackage model1, EPackage model2) {
 		super(model1, model2);
 		syncer = new EMFSyncer(#['scenario4_v1'], model2, newArrayList(Task_2_M1_M2_M1.mapping))
