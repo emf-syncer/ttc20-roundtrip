@@ -5,7 +5,7 @@
 * The modified reference solution can be found at [de.hub.mse.ttc2020.solution](de.hub.mse.ttc2020.solution/).
 
 
-## Installation guidelines
+## Installation guide
 
 * Download [Eclipse IDE for Java and DSL Developers](https://www.eclipse.org/downloads/packages/)
 * Install EMF Compare 3.3 from the update site `https://download.eclipse.org/modeling/emf/compare/updates/releases/3.3/` and restart Eclipse. 
